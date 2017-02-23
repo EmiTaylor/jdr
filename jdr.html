@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+
+            var taille = 8;
+
+            $().ready(function() {
+                var damier = "";
+                for (var i = 0; i < taille; i++)
+                {
+                    damier += "<tr><td class=\"repere\">" + (i+1) + "</td>";
+                    for (var j = 0; j < taille; j++)
+                    {
+                        damier += "<td class=\"d\"></td>";
+                    }
+                    damier += "</tr>";
+                }
+                $("#damier").append(damier);
+            });
+
+        </script>
+        <style>
+            table, tr, td {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            table {
+                margin: auto;
+            }
+
+            td {
+                height: 48px;
+                width: 48px;
+                text-align: center;
+            }
+
+            tr:nth-child(2n+0) .d:nth-child(2n+0){
+                background: black;
+            }
+            tr:nth-child(2n+1) .d:nth-child(2n+1){
+                background: black;
+            }
+            td:first-child{
+
+                background: white;
+            }
+            .repere{
+                font-weight: bold;
+                font-size: 1.4em;
+            }
+            #log{
+                width: 15em;
+                padding: 1em;
+                border: 1px solid black;
+                margin: 1em;
+                position: absolute;
+                bottom: 1em;
+                left: 1em;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="log">
+                 <div class="center"alt="Jeu de Rôle"></div><br>
+                 <div class="center"><strong>Si l'utilisateur n'existe pas, il sera automatiquement créé</strong></div><br>
+                 <div class="input-group">
+                     <span class="input-group-addon" id="basic-addon1">@</span>
+                     <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                 </div>
+                 <br>
+                 <div class="input-group">
+                     <span class="input-group-addon" id="basic-addon2">***</span>
+                     <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                 </div>
+
+                <button type="button" class="btn btn-primary navbar-btn">Sign in</button>
+        </div>
+
+
+
+        <table id="damier">
+            <tr class="repere">
+                <td></td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

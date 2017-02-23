@@ -1,0 +1,47 @@
+table, tr, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+td {
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+tr:nth-child(2n+0) .d:nth-child(2n+0){
+    background: black;
+    color: white;
+}
+tr:nth-child(2n+1) .d:nth-child(2n+1){
+    background: black;
+    color: white;
+}
+td:first-child{
+
+    background: white;
+}
+#damier {
+    display: none;
+    margin: auto;
+}
+
+.creation_perso {
+display: none;
+}
+
+.repere{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+#log{
+    width: 600px;
+    padding: 1em;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}

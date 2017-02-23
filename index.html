@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jeu de role </title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jdr.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <section id="log">
+            <form>
+                 <div class="center"alt="Jeu de Rôle"></div><br>
+                 <div class="center"><strong>Si l'utilisateur n'existe pas, il sera automatiquement créé</strong></div><br>
+                 <div class="input-group">
+                     <span class="input-group-addon" id="basic-addon1">@</span>
+                     <input type="text" id="mail" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                 </div>
+                 <br>
+                 <div class="input-group">
+                     <span class="input-group-addon" id="basic-addon2">***</span>
+                     <input type="password" id="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                 </div>
+
+                <div class="center">
+                    <button type="button" id="loginbtn" class="btn btn-primary navbar-btn">Sign in</button>
+                </center>
+            </form>
+        </section>
+
+        <section class="creation_perso container">
+            <div class="input-group">
+                <select id="sexe" class="btn btn-default">
+                    <option value ="0" selected="selected">Femelle</option>
+                    <option value="1">Mâle</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <select class="btn btn-default race" id="race">
+                    <option value ="0" selected="selected">Humain</option>
+                    <option value ="1">Nain</option>
+                    <option value ="2">Elfe</option>
+                    <option value ="3">Orc</option>
+                    <option value ="4">Gobelin</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <select class="btn btn-default classe" id="classe">
+                    <option value ="0" selected="selected">Guerrier</option>
+                    <option value ="1">Paladin</option>
+                    <option value ="2">Mage</option>
+                    <option value ="3">Archer</option>
+                    <option value ="4">Shaman</option>
+                </select>
+            </div>
+            <input id="nom" type="text" class="form-control">
+            <button type="button" id="Validbutun" class="btn btn-primary">Valider</button>
+
+        </section>
+
+        <table id="damier">
+            <tr class="repere">
+                <td></td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+            </tr>
+        </table>
+
+
+
+
+
+    </body>
+</html>
