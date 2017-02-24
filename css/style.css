@@ -28,6 +28,20 @@ td:first-child{
     margin: auto;
 }
 
+#nom {
+    display: inline;
+    width: 300px;
+}
+
+#damier span {
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    display: block;
+}
+#logo{
+    font-size: 4em;
+}
 .creation_perso {
 display: none;
 }

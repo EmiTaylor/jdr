@@ -32,33 +32,44 @@
         </section>
 
         <section class="creation_perso container">
-            <div class="input-group">
-                <select id="sexe" class="btn btn-default">
-                    <option value ="0" selected="selected">Femelle</option>
-                    <option value="1">Mâle</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <select class="btn btn-default race" id="race">
-                    <option value ="0" selected="selected">Humain</option>
-                    <option value ="1">Nain</option>
-                    <option value ="2">Elfe</option>
-                    <option value ="3">Orc</option>
-                    <option value ="4">Gobelin</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <select class="btn btn-default classe" id="classe">
-                    <option value ="0" selected="selected">Guerrier</option>
-                    <option value ="1">Paladin</option>
-                    <option value ="2">Mage</option>
-                    <option value ="3">Archer</option>
-                    <option value ="4">Shaman</option>
-                </select>
-            </div>
-            <input id="nom" type="text" class="form-control">
-            <button type="button" id="Validbutun" class="btn btn-primary">Valider</button>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Création du personnage</h3>
+                </div>
+                <div class="panel-body center">
+                    <div id="logo">
+                        <span class="glyphicon glyphicon-king" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-queen" aria-hidden="true"></span>
+                    </div>
+                    <br><br>
+                    <select id="sexe" class="btn btn-default">
+                        <option value ="0" selected="selected">Femelle</option>
+                        <option value="1">Mâle</option>
+                    </select>
 
+
+                    <select class="btn btn-default race" id="race">
+                        <option value ="0" selected="selected">Humain</option>
+                        <option value ="1">Nain</option>
+                        <option value ="2">Elfe</option>
+                        <option value ="3">Orc</option>
+                        <option value ="4">Gobelin</option>
+                    </select>
+
+
+                    <select class="btn btn-default classe" id="classe">
+                        <option value ="0" selected="selected">Guerrier</option>
+                        <option value ="1">Paladin</option>
+                        <option value ="2">Mage</option>
+                        <option value ="3">Archer</option>
+                        <option value ="4">Shaman</option>
+                    </select>
+                    <br><br>
+                    <input id="nom" type="text" class="form-control" placeholder="Nom du personnage">
+                    <br><br>
+                    <button type="button" id="Validbutun" class="btn btn-primary">Valider</button>
+                </div>
+            </div>
         </section>
 
         <table id="damier">

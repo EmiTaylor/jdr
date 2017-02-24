@@ -86,7 +86,29 @@ $().ready(function() {
                           });
                 }
             }
-
         });
+    });
+
+    var $selected = null;
+    var lastBackground = '';
+    $("#damier span").click(function(e) {
+        e.stopPropagation();
+        if($selected != null) {
+            $selected.parent().css('background', lastBackground);
+        }
+
+        $selected = $(this);
+        $("#damier span").css('border', 'none');
+        lastBackground = $(this).parent().css('background');
+        $(this).parent().css('background', 'green');
+    });
+
+    $("#damier td").click(function(e){
+        if($selected != null) {
+            $selected.parent().css('background', lastBackground);
+            $selected.detach().appendTo(this);
+
+            $selected = null;
+        }
     });
 });
